@@ -1,6 +1,4 @@
-# other-project
-
-> A Vue.js project
+# Vue-Portfolio-Site
 
 ## Build Setup
 
