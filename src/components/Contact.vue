@@ -18,7 +18,7 @@ import { TweenMax, TimelineMax } from 'gsap';
 export default {
   data() {
     return {
-      text: "Reach me at the following"
+      text: "reach me at the following"
     }
   },
   computed: {

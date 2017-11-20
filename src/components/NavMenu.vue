@@ -64,12 +64,8 @@ export default {
 
     }
     h2 {
-
-
       font-size: 60px;
-
       width: 300px;
-
       @media (max-width: 768px) {
         font-size: 50px;
       }
@@ -85,9 +81,7 @@ export default {
         }
         &:hover:after {
           transform: scaleX(0.7);
-
         }
-
       }
     }
   }

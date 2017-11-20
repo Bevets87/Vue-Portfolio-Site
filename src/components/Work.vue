@@ -8,9 +8,18 @@
 </template>
 
 <script>
-import Photo from './Photo.vue'
 export default {
     name: 'work',
+    mounted() {
+      sr.reveal('.photo', {
+        reset: true,
+        viewFactor: 0
+      })
+      setTimeout(function(){
+        window.scrollTo(0,1)
+      }, 200)
+
+    },
     data() {
       return {
         images: [
@@ -170,17 +179,7 @@ export default {
 
         ]
       }
-    },
-    mounted() {
-      sr.reveal('.photo', {reset: true})
-
-
-    },
-
-    components: {
-      Photo
     }
-
   }
 </script>
 
@@ -241,7 +240,6 @@ export default {
       }
     }
   }
-
 }
 
 

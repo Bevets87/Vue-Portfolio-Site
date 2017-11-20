@@ -22,7 +22,6 @@ export default {
     let index = this.index
     sr.reveal($textBlock, {
       afterReveal: function (domEl) {
-        console.dir(domEl)
         TweenMax.to(domEl.parentNode, 0, {marginTop: index === 0 ? '15vh' : '0'})
         TweenMax.to(domEl, 0, {left: index % 2 === 0 ? '20' : 'none', right: index % 2 === 0 ? 'none' : '20'})
         TweenMax.staggerTo(domEl.children, 1, {opacity: 1}, 0.05)
@@ -51,8 +50,11 @@ div {
     font-size: 27px;
     text-align: center;
     @media(max-width: 768px) {
+      position: static;
       width: 100%;
       font-size: 24px;
+      text-align: center;
+
     }
   }
 }

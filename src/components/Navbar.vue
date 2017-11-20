@@ -37,7 +37,6 @@
 
       },
       enter(el, done) {
-
         TweenMax.to(document.querySelectorAll('.line-menu'), 0.5, {backgroundColor: 'white'})
         TweenMax.staggerFrom(el.children, 0.5, {opacity: 0, ease:'ease-in-out'}, 0.1);
         done()
