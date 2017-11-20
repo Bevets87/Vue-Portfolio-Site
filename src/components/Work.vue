@@ -185,20 +185,22 @@ export default {
 
 <style scoped lang="scss">
 @import '../theme/typography';
+@import '../theme/mixins';
 .photos {
   position: absolute;
   top: 0;
   left: 0;
-  column-count: 4;
+  @include column-count(4);
+
   column-gap: 0;
   @media(max-width: 1000px) {
-    column-count: 3;
+    @include column-count(3);
   }
   @media(max-width: 768px) {
-    column-count: 2;
+    @include column-count(2);
   }
   @media(max-width: 600px) {
-    column-count: 1;
+    @include column-count(1);
   }
   .photo {
     position: relative;

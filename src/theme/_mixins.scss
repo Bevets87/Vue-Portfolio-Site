@@ -1,0 +1,6 @@
+@mixin column-count ($cols) {
+  -webkit-column-count: $cols;
+     -moz-column-count: $cols;
+      -ms-column-count: $cols;
+          column-count: $cols;
+}

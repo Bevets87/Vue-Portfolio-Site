@@ -5,9 +5,10 @@
   "author": "Steve <bevets87@gmail.com>",
   "private": true,
   "scripts": {
-    "prebuild": "rimraf docs",
+    "prebuild": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot"
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "remove:build": "rimraf dist"
   },
   "dependencies": {
     "bulma": "^0.5.3",

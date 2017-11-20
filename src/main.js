@@ -6,7 +6,6 @@ import App from './App.vue'
 import Contact from './components/Contact.vue'
 import Work from './components/Work.vue'
 import About from './components/About.vue'
-import Navbar from './components/Navbar.vue'
 
 import 'bulma/css/bulma.css'
 
@@ -14,15 +13,15 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/Vue-Portfolio-Site/',
+    path: '/',
     component: Work
   },
   {
-    path: '/Vue-Portfolio-Site/about',
+    path: '/about',
     component: About
   },
   {
-    path: '/Vue-Portfolio-Site/contact',
+    path: '/contact',
     component: Contact
   }
 ]

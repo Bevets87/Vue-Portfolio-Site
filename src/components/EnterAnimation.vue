@@ -71,7 +71,6 @@ export default {
     background: black;
 
     #logo {
-      position: absolute;
       margin-top: -50px;
       display: block;
     }
