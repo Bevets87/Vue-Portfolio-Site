@@ -14,15 +14,15 @@ Vue.use(VueRouter)
 
 const routes = [
   {
-    path: '/',
+    path: '/Vue-Portfolio-Site/',
     component: Work
   },
   {
-    path: '/about',
+    path: '/Vue-Portfolio-Site/about',
     component: About
   },
   {
-    path: '/contact',
+    path: '/Vue-Portfolio-Site/contact',
     component: Contact
   }
 ]
